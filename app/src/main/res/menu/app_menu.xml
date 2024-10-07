@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/userProfileId" android:title="Profile" app:showAsAction="never"/>
+    <item android:id="@+id/logoutMenuId" android:title="Logout" app:showAsAction="never"/>
+    <item android:id="@+id/ratingMenuId" android:title="Rate us" app:showAsAction="never"/>
+    <item android:id="@+id/videoId" android:title="Video" app:showAsAction="never"/>
+    <item android:id="@+id/animationId" android:title="Animation" app:showAsAction="never"/>
+    <item android:id="@+id/currencyId" android:title="Currency" app:showAsAction="never"/>
+    <item android:id="@+id/settingId" android:title="Setting" app:showAsAction="never"/>
+</menu>

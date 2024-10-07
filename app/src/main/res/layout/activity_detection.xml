@@ -1,0 +1,90 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Detection">
+
+    <ImageView
+        android:id="@+id/imageVW"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/image" />
+
+    <TextView
+        android:id="@+id/resultOptions"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#CC1414"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <!-- This TextView will display the confidence percentages -->
+    <TextView
+        android:id="@+id/confidenceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confidence:"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSelectPicture"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="Select Picture"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnTakePicture"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Take Picture"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGeneratePdf"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Generate PDF"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+</LinearLayout>
